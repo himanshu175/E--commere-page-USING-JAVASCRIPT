@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Inria Sans", sans-serif;
+}
+
+* body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+* body .main-container {
+  width: 100%;
+  min-height: 100%;
+}
+
+* body .main-container .parant-row {
+  width: 90%;
+}
+
+* body .main-container .parant-row .paragraph {
+  color: #727171;
+}
+
+* body .main-container .parant-row .parant-left-column {
+  background-color: #fff;
+}
+
+* body .main-container .parant-row .parant-left-column .header1 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+* body .main-container .parant-row .parant-left-column .horizontally-line {
+  width: 100%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+* body .main-container .parant-row .parant-left-column .left-column-row .product-box {
+  margin: 10px 0 0 0;
+}
+
+* body .main-container .parant-row .parant-left-column .left-column-row .product-box .page-item .page-link:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+* body .main-container .parant-row .parant-left-column .left-column-row .product-box .page-item .text-box {
+  width: 38px;
+  height: 38px;
+  border: 1px solid #e0d7d7;
+  cursor: no-drop;
+}
+
+* body .main-container .parant-row .parant-left-column .left-column-row .product-box .paragraph {
+  color: #727171;
+  padding: 0;
+}
+
+* body .main-container .parant-row .parant-right-column .top-div,
+* body .main-container .parant-row .parant-right-column .center-div,
+* body .main-container .parant-row .parant-right-column .bottom-div {
+  background-color: #fff;
+}
+
+* body .main-container .parant-row .parant-right-column .top-div .header1,
+* body .main-container .parant-row .parant-right-column .center-div .header1,
+* body .main-container .parant-row .parant-right-column .bottom-div .header1 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+* body .main-container .parant-row .parant-right-column .top-div .center-div,
+* body .main-container .parant-row .parant-right-column .top-div input,
+* body .main-container .parant-row .parant-right-column .center-div .center-div,
+* body .main-container .parant-row .parant-right-column .center-div input,
+* body .main-container .parant-row .parant-right-column .bottom-div .center-div,
+* body .main-container .parant-row .parant-right-column .bottom-div input {
+  outline: none;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/1f280ffe0a.js" crossorigin="anonymous"></script>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container-fluid main-container bg-light d-flex justify-content-center align-items-center">
+        <div class="row parant-row d-flex justify-content-around">
+            <!-- left-column -->
+            <div class="col-xl-8 col-lg-7 col-11 parant-left-column shadow my-3">
+                <h1 class="header1 p-2">Card (2 items)</h1>
+                <div class="row left-column-row d-flex justify-content-between align-items-center">
+                    <!-- img -->
+                    <div class="col-md-3 col-sm-4 col-8 images-box w-10">
+                        <img class="w-100" src="black.jpg" alt="black">
+                    </div>
+                    <!-- product -->
+                    <div class="col-md-9 col-9 product-box w-100">
+                        <div class="row justify-content-between">
+                            <div class="col-xl-9 col-lg-8 col-md-8">
+                                <h1 class="header1">Black Zara Shirt</h1>
+                                <p class="paragraph">SHIRT-BLACK</p>
+                                <p class="paragraph">COLOUR-BLACK</p>
+                                <p class="paragraph">SIZE-M</p>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-11">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <button onclick="decreasement()" class="page-link"><i
+                                                class="fas fa-minus"></i></button>
+                                    </li>
+                                    <li class="page-item">
+                                        <input type="text" name="" value="0" class="text-box text-center" id="textbox"
+                                            disabled>
+                                    </li>
+                                    <li class="page-item">
+                                        <button onclick="increasement()" class="page-link" href="#"><i
+                                                class="fas fa-plus"></i></button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-9">
+                                <i class="fas fa-trash-alt"></i><span class="paragraph">REMOVE ITEM</span> <i
+                                    class="fas fa-heart"></i><span class="paragraph">MOVE TO WISH LIST</span>
+                            </div>
+                            <div class="col-md-3 text-lg-center">
+                                <h1 class="header1 d-inline-block">$<span id="prize">0.00</span></h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="horizontally-line">
+
+                    <!-- second shirt -->
+
+                    <div class="row left-column-row d-flex justify-content-between align-items-center mx-1 my-3">
+                        <!-- img -->
+                        <div class="col-md-3 col-sm-4 col-8 images-box w-10">
+                            <img class="w-100" src="purple.jpg" alt="purple">
+                        </div>
+                        <!-- product -->
+                        <div class="col-md-9 col-9 product-box w-100">
+                            <div class="row">
+                                <div class="col-xl-9 col-lg-8 col-md-8">
+                                    <h1 class="header1">Black Zara Shirt</h1>
+                                    <p class="paragraph">SHIRT-BLACK</p>
+                                    <p class="paragraph">COLOUR-BLACK</p>
+                                    <p class="paragraph">SIZE-M</p>
+
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-4">
+                                    <ul class="pagination">
+                                        <li class="page-item">
+                                            <button onclick="decreasement_1()" class="page-link"><i
+                                                    class="fas fa-minus"></i></button>
+                                        </li>
+                                        <li class="page-item">
+                                            <input type="text" name="" value="0" class="text-box text-center"
+                                                id="textbox_1" disabled>
+                                        </li>
+                                        <li class="page-item">
+                                            <button onclick="increasement_1()" class="page-link" href="#"><i
+                                                    class="fas fa-plus"></i></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row d-flex justify-content-around">
+                                <div class="col-md-9">
+                                    <i class="fas fa-trash-alt"></i><span class="paragraph">REMOVE ITEM</span> <i
+                                        class="fas fa-heart"></i><span class="paragraph">MOVE TO WISH LIST</span>
+                                </div>
+                                <div class="col-md-3 text-lg-center">
+                                    <h1 class="header1 d-inline-block Ml-1">$<span id="prize_1">0.00</span></h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- right column -->
+            <div class="col-xl-4 col-lg-5 col-11 parant-right-column my-3">
+                <div class="top-div shadow p-3">
+                    <h1 class="header1">The Total Amount Of</h1>
+                    <div class="row">
+                        <p class="col-md-9 paragraph">Product Amount</p>
+                        <p class="col-md-3 paragraph">$<span id="product_total_amt">0.00</span></p>
+                    </div>
+                    <div class="row">
+                        <p class="col-md-9 paragraph">Shipping Charge</p>
+                        <div class="col-md-3 paragraph">$<span id="shipping_charge_amt">50.00</span></div>
+                    </div>
+                    <hr class="horizontally-line">
+                    <div class="row">
+                        <p class="col-md-9 paragraph">The Total Amount Of(including VAT)</p>
+                        <p class="col-md-3 paragraph">$<span id="including_amount">0.00</span></p>
+                    </div>
+                    <button type="button" class="btn btn-primary">CHECKOUT</button>
+                </div>
+                <div class="center-div shadow my-3 p-3">
+                    <p class="paragraph">Add a discount code(optional)</p>
+                    <input type="text" placeholder="Apply your code" value="" class="discount-code w-100 p-1" id="codeApply">
+                    <small class="paragraph" id="valid_code"></small> <br>
+                    <button type="button" class="btn btn-primary my-2" onclick="apply_Code()">Apply</button>
+                </div>
+                <div class="bottom-div shadow p-3">
+                    <h1 class="header1">Shipping Details</h1>
+                    <p class="paragraph">RITIK PATHAK <br> Pankaj Shukla Ki Gali,DATIA(m.p)</p>
+                    <h1 class="header1">Expected delivery date</h1>
+                    <p class="paragraph">march 5th 2021 - march 9th 2021</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="App.js"></script>
+</body>
+
+</html>

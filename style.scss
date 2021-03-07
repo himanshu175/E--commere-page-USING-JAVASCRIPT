@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inria Sans", sans-serif;
+
+    body {
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+
+        .main-container {
+            width: 100%;
+            min-height: 100%;
+
+            .parant-row {
+                width: 90%;
+
+                .paragraph {
+                    color: rgb(114, 113, 113);
+                }
+
+                .parant-left-column {
+                    background-color: #fff;
+
+                    .header1 {
+                        font-size: 22px;
+                        font-weight: 700;
+                    }
+
+                    .horizontally-line {
+                        width: 100%;
+                        margin-left: 1rem;
+                        margin-right: 1rem;
+                        border: 0;
+                        border-top: 1px solid rgba(0, 0, 0, 0.1);
+                    }
+                    .left-column-row {
+                        .product-box {
+                            margin: 10px 0 0 0;
+
+                            .page-item .page-link:focus {
+                                box-shadow: none;
+                            }
+
+                            .page-item .text-box {
+                                width: 38px;
+                                height: 38px;
+                                border: 1px solid rgb(224, 215, 215);
+                                cursor: no-drop;
+                            }
+
+                            .paragraph {
+                                color: rgb(114, 113, 113);
+                                padding: 0;
+                                // margin-bottom: 5px;
+                            }
+                        }
+                    }
+                }
+
+                .parant-right-column {
+                    .top-div,
+                    .center-div,
+                    .bottom-div {
+                        background-color: #fff;
+
+                        .header1 {
+                            font-size: 20px;
+                            font-weight: 700;
+                        }
+
+                        .center-div,
+                        input {
+                            outline: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
